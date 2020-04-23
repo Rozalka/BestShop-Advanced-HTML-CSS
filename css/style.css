@@ -6,15 +6,122 @@ body {
 
 :root {
     --color-primary: #08A6E4;
-    --color-primary-shadow: rgba(7, 172, 230, .16);
+    --color-primary-shadow: #00000029;
     --color-redish: #FB3B64;
     --color-green: #55DFB4;
     --color-black: #000000;
     --color-grey: #A5A5A5;
     --color-light-grey: #F7F7F7;
     --color-white: #FFFFFF;
+    --font-headers: 'Raleway', sans-serif;
+    --font-paragraphs: 'Open Sans', sans-serif;
+    --radius-big-btn: 40px;
+    --radius-medium-btn: 35px;
+    --radius-small-btn: 23px;
 }
 
-* {
+a {
+    text-decoration: none;
+}
+header {
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    font-family: var(--font-headers);
+    font-size: 49px;
+    font-weight: 400;
+    line-height: 57px;
+    color: var(--color-black);
+    text-transform: capitalize;
+    padding-top: 110px;
+}
+
+.h2 {
+    font-family: var(--font-headers);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42px;
+    color: var(--color-black);
+}
+
+p {
+    font-family: var(--font-paragraphs);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: var(--color-black);
+}
+
+.top-menu {
+    height: 70px;
+    box-shadow: 0px 3px 6px var(--color-primary-shadow);
+}
+
+.container {
+    width: 1352px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+a.logo {
+    font-family: var(--font-headers);
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 37px;
+    color: var(--color-primary);
+}
+
+.top-menu ul {
+    display: flex;
+    align-items: flex-end;
+}
+.nav-link {
+    font-family: var(--font-paragraphs);
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 3.28px;
+    color: var(--color-grey);
+    padding: 28px 18px 22px;
+    border-bottom: 2px solid transparent;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    cursor: none;
+    color: var(--color-black);
+    border-color: var(--color-primary);
+}
+
+.opening-section {
+    height: calc(100vh - 70px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background: url("../assets/Background.png") no-repeat;
+    background-position: bottom;
+    background-size: contain;
+}
+
+.opening-section button a {
+  color:var(--color-white);
+}
+
+.opening-section button {
+    width: 440px;
+    height: 67px;
     background: var(--color-primary);
+    border-radius: var(--radius-big-btn);
+    margin-top: 38px;
+    box-shadow: 5px 10px 14px #07ACE629;
+}
+
+.opening-section button::first-letter {
+    text-transform: capitalize;
 }

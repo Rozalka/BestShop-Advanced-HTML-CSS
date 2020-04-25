@@ -43,7 +43,7 @@ h1 {
     padding-top: 110px;
 }
 
-.h2 {
+h2 {
     font-family: var(--font-headers);
     font-size: 36px;
     font-weight: 400;
@@ -142,9 +142,6 @@ a.logo {
 }
 
 .statistics-small-header {
-    font-family: var(--font-headers);
-    font-size: 36px;
-    color: var(--color-black);
     margin-top: 100px;
     text-align: center;
 }
@@ -216,3 +213,131 @@ a.logo {
     top: 7px;
     left: 50%;
 }
+
+.benefits {
+    background: var(--color-light-grey);
+    padding: 100px 0;
+}
+
+.benefit {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background: var(--color-white);
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+    margin: 37px auto;
+}
+
+.benefit-info {
+    margin: 90px 35px;
+    max-width: 415px;
+}
+
+.benefit-info::after {
+    content: "";
+    width: 332px;
+    height: 4px;
+    display: block;
+    margin-top: 50px;
+}
+
+.benefit1 .benefit-info::after {
+    background-color: var(--color-redish);
+}
+
+.benefit-info p {
+    margin-top: 30px;
+    line-height: 22px;
+}
+
+.benefit-pic {
+    position: relative;
+}
+
+.benefit-pic img {
+    position: relative;
+    z-index: 2;
+}
+
+.pic1 {
+    margin-right: 117px;
+    margin-bottom: 38px;
+}
+
+.pic1::before {
+    content: "";
+    width: 180px;
+    height: 180px;
+    background-color: var(--color-redish);
+    position: absolute;
+    display: block;
+    border-radius: 40px;
+    top: -40px;
+    right: 0;
+    transform: rotate(45deg);
+}
+
+.pic1 img {
+    width: 386px;
+    height: auto;
+}
+
+.benefit2 {
+    flex-direction: row-reverse;
+    padding: 0 20px 0 70px;
+}
+ 
+.pic2::before {
+    content: "";
+    width: 320px;
+    height: 320px;
+    background: var(--color-primary);
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    top: -20px;
+    left: 0;
+}
+
+.pic2 img {
+    width: 426px;
+    height: auto;
+}
+
+.benefit2 .benefit-info::after {
+    background-color: var(--color-primary);
+}
+
+.benefit3-and-4 {
+    display: flex;
+    margin-bottom: 0;
+}
+
+.benefit3 {
+    width: 623px;
+}
+
+.benefit3 .benefit-info {
+    margin: 70px 35px;
+}
+
+.benefit-pic3 {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-green);
+    margin: 37px 0 37px 60px;
+}
+
+.benefit-pic3 img {
+    width: 295px;
+    height: auto;
+    margin-top: 55px;
+}
+
+.benefit3 .benefit-info::after {
+    background-color: var(--color-green);
+}
+

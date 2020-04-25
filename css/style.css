@@ -38,7 +38,6 @@ h1 {
     font-family: var(--font-headers);
     font-size: 49px;
     font-weight: 400;
-    line-height: 57px;
     color: var(--color-black);
     text-transform: capitalize;
     padding-top: 110px;
@@ -48,7 +47,6 @@ h1 {
     font-family: var(--font-headers);
     font-size: 36px;
     font-weight: 400;
-    line-height: 42px;
     color: var(--color-black);
 }
 
@@ -56,9 +54,12 @@ p {
     font-family: var(--font-paragraphs);
     font-size: 16px;
     font-weight: 400;
-    line-height: 22px;
     color: var(--color-black);
 }
+
+
+/* styles Section Navigaton */
+
 
 .top-menu {
     height: 70px;
@@ -76,7 +77,6 @@ a.logo {
     font-family: var(--font-headers);
     font-size: 32px;
     font-weight: 300;
-    line-height: 37px;
     color: var(--color-primary);
 }
 
@@ -88,7 +88,6 @@ a.logo {
     font-family: var(--font-paragraphs);
     font-size: 11px;
     font-weight: 700;
-    line-height: 15px;
     letter-spacing: 3.28px;
     color: var(--color-grey);
     padding: 28px 18px 22px;
@@ -101,6 +100,10 @@ a.logo {
     color: var(--color-black);
     border-color: var(--color-primary);
 }
+
+
+/* styles Section Opening  */
+
 
 .opening-section {
     height: calc(100vh - 70px);
@@ -130,32 +133,86 @@ a.logo {
     text-transform: capitalize;
 }
 
-.statistics {
+
+ /* styles Section Statistics  */
+
+
+ .statistics .container {
     min-height: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .statistics-small-header {
     font-family: var(--font-headers);
     font-size: 36px;
-    line-height: 42px;
     color: var(--color-black);
-    padding: 100px 0;
+    margin-top: 100px;
+    text-align: center;
 }
 
 .statistics-info {
     display: flex;
     justify-content:space-between;
+    margin: 100px auto;
+    max-width: 800px;
 }
 
-div.number {
+.box {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 0 90px;
+    font-family: var(--font-paragraphs);
+    text-align: center;
+    max-width: 160px;
 }
 
+.statistics-number {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 5.96px;
+    margin-top: 14px;
+}
 
+.statistics-text {
+    font-size: 17px;
+    color: var(--color-grey);
+    margin-top: 19px;
+}
+
+.icon {
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.statistics-img {
+    position: absolute;
+}
+
+.circle1 {
+    background-color: var(--color-redish);
+}
+
+.circle1 .statistics-img {
+    top: 0px;
+    left: 45%;
+}
+
+.circle2 {
+    background-color: var(--color-primary);
+}
+
+.circle2 .statistics-img {
+    top: 10px;
+    left: 45%;
+}
+
+.circle3 {
+    background-color: var(--color-green);
+}
+ 
+.circle3 .statistics-img {
+    top: 7px;
+    left: 50%;
+}

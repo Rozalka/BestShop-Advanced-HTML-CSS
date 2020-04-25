@@ -39,8 +39,6 @@ h1 {
     font-size: 49px;
     font-weight: 400;
     color: var(--color-black);
-    text-transform: capitalize;
-    padding-top: 110px;
 }
 
 h2 {
@@ -103,6 +101,11 @@ a.logo {
 
 
 /* styles Section Opening  */
+
+.opening-section h1 {
+    text-transform: capitalize;
+    padding-top: 110px;
+}
 
 
 .opening-section {
@@ -484,19 +487,96 @@ a.logo {
 
 .contact .container {
     margin-top: 155px;
-    max-width: 896px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    max-width: 896px;
 }
 
 .contact-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    /* margin-right: 114px; */
+
 }
 
 .contact-info p {
-    color: var(--color-grey);
-    font-weight: 700;
+    margin-top: 22px;
+    margin-bottom: 42px;
 }
+
+.contact-tools {
+    display: flex;
+    justify-content: space-between;
+}
+.e-mail,
+.telephone {
+    font-family: var(--font-paragraphs);
+    font-size: 16px;
+    color: var(--color-grey);
+    margin-right: 20px;
+}
+
+.e-mail::before,
+.telephone::before {
+    content: "";
+    width: 27px;
+    height: 27px;
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+    top: 7px;
+}
+
+.e-mail::before {
+    background: url("../assets/Mail\ Icon.svg");
+}
+
+.telephone::before {
+    background: url("../assets/Phone\ Icon.svg");
+}
+
+.contact-form p {
+    max-width: 405px;
+    font-size: 12px;
+    color: var(--color-grey);
+    font-family: var(--font-paragraphs);
+}
+input[type="email"],
+input[type="text"] {
+    width: 439px;
+    height: 58px;
+    border: none;
+    border-bottom: 1px solid var(--color-grey);
+    margin-bottom: 30px;
+}
+
+input::placeholder {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-family: var(--font-paragraphs);
+    color: var(--color-primary);
+}
+
+.checkbox input {
+    opacity: 0;
+    height: 0;
+    width: 0;
+    }
+
+.checkbox {
+    display: flex;
+  }
+   
+  .checkbox span {
+    height: 24px;
+    width: 24px;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    box-sizing: border-box;
+  }
+  
+  .checkbox input:checked + span {
+    background: url("../assets/Checkmark-1.svg");
+    background-position: center;
+  }

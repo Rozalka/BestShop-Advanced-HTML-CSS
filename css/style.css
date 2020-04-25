@@ -214,6 +214,9 @@ a.logo {
     left: 50%;
 }
 
+
+/* styles Section Benefits */
+
 .benefits {
     background: var(--color-light-grey);
     padding: 100px 0;
@@ -341,3 +344,132 @@ a.logo {
     background-color: var(--color-green);
 }
 
+
+/* styles Section Pricing */
+.pricing .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.pricing-header {
+    margin-top: 100px;
+}
+
+.pricing-single {
+    width: 372px;
+    border-radius: 18px;
+    margin: 0 30px;
+    text-align: center;
+}
+
+.pricing-basic {
+    border: 1px solid var(--color-redish);
+}
+
+.pricing-professional {
+    border: 1px solid var(--color-primary);
+}
+
+.pricing-premium {
+    border: 1px solid var(--color-green);
+}
+
+.pricing-type {
+    font-family: var(--font-headers);
+    font-size: 20px;
+    font-weight: 700;
+    margin: 34px auto 14px;
+    color: #13253B;
+}
+.pricing-cost {
+    font-family: var(--font-paragraphs);
+    font-size: 46px;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.pricing-basic .pricing-cost {
+    color: var(--color-redish);
+    margin-bottom: 69px;
+}
+
+.pricing-professional .pricing-cost {
+    color: var(--color-primary);
+}
+
+.pricing-premium .pricing-cost {
+    color: var(--color-green);
+}
+
+.offer-time {
+    font-family: var(--font-headers);
+    font-size: 12px;
+    font-weight: 700;
+    color: #13253B;
+    margin-bottom: 50px;
+}
+
+.pricing-details li {
+    font-family: var(--font-paragraphs);
+    font-size: 14px;
+    line-height: 41px;
+}
+.pricing-details {
+    margin-bottom: 60px;
+}
+
+.pricing-details .checked::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    background: url("../assets/Ckechmark-1.svg");
+    display: inline-block;
+    margin-right: 10px;
+}
+.not-checked::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 10px;
+    background: url("../assets/Close.svg");
+}
+
+.pricing-single .btn {
+    width: 150px;
+    height: 50px;
+    font-size: 13px;
+    color: var(--color-white);
+    font-family: var(--font-paragraphs);
+    font-weight: 700;
+    border-radius: 23px;
+    padding: 16px 57px;
+    position: relative;
+    bottom: -10px;
+}
+
+.pricing-basic .btn {
+    background: var(--color-redish);
+}
+
+.pricing-professional .btn {
+    background: var(--color-primary);
+}
+
+.pricing-premium .btn {
+    background: var(--color-green);
+}
+
+.pricing-professional {
+    width: 405px;
+    box-shadow: 5px 10px 27px var(--color-primary-shadow);
+}

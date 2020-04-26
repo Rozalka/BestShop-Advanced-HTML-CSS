@@ -1,5 +1,8 @@
-body {
+* {
     box-sizing: border-box;
+}
+
+body {
     font-family: 'Raleway', sans-serif,
                  'Open Sans', sans-serif;
 }
@@ -227,7 +230,13 @@ a.logo {
 .benefits {
     background: var(--color-light-grey);
     padding: 100px 0;
+    
 }
+
+.benefits-container {
+    padding: 0 100px;
+}
+
 
 .benefit {
     display: flex;
@@ -236,7 +245,7 @@ a.logo {
     background: var(--color-white);
     border: 1px solid #E8E9ED;
     border-radius: 5px;
-    margin: 37px auto;
+    margin: 37px;
 }
 
 .benefit-info {
@@ -319,16 +328,16 @@ a.logo {
     background-color: var(--color-primary);
 }
 
-.benefit3-and-4 {
+.benefit3 {
     display: flex;
     margin-bottom: 0;
 }
 
-.benefit3 {
-    width: 623px;
+.benefit3a {
+    width: 620px;
 }
 
-.benefit3 .benefit-info {
+.benefit3a .benefit-info {
     margin: 70px 35px;
 }
 
@@ -338,7 +347,8 @@ a.logo {
     align-items: center;
     justify-content: center;
     background: var(--color-green);
-    margin: 37px 0 37px 60px;
+    border: none;
+    margin: 37px 37px 37px 60px; 
 }
 
 .benefit-pic3 img {
@@ -628,3 +638,6 @@ input::placeholder {
   .social-media a img {
       margin-left: 20px;
   }
+
+
+  

@@ -534,6 +534,11 @@ a.logo {
     background: url("../assets/Phone\ Icon.svg");
 }
 
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
 .contact-form p {
     max-width: 405px;
     font-size: 12px;
@@ -579,4 +584,15 @@ input::placeholder {
   .checkbox input:checked + span {
     background: url("../assets/Checkmark-1.svg");
     background-position: center;
+  }
+
+  button[type="submit"] {
+      width: 226px;
+      height: 57px;
+      background: var(--color-primary);
+      font-size: 13px;
+      color: var(--color-white);
+      border-radius: 35px;
+      margin: 20px 0;
+      align-self: flex-end;
   }

@@ -32,11 +32,6 @@ a {
     margin: 0 auto;
 }
 
-header {
-    width: 100vw;
-    height: 100vh;
-}
-
 h1 {
     font-family: var(--font-headers);
     font-size: 49px;
@@ -81,9 +76,16 @@ a.logo {
     color: var(--color-primary);
 }
 
-.top-menu ul {
+.top-menu-items {
     display: flex;
-    align-items: flex-end;
+}
+
+.top-menu-items li {
+    padding: 0 26px;
+}
+
+.top-menu-items li:last-child {
+    padding-right: 0;
 }
 .nav-link {
     font-family: var(--font-paragraphs);
@@ -92,12 +94,11 @@ a.logo {
     letter-spacing: 3.28px;
     color: var(--color-grey);
     padding: 28px 18px 22px;
-    border-bottom: 2px solid transparent;
+    border-bottom: 4px solid transparent;
     text-transform: uppercase;
 }
 
 .nav-link:hover {
-    cursor: none;
     color: var(--color-black);
     border-color: var(--color-primary);
 }
@@ -105,39 +106,46 @@ a.logo {
 
 /* styles Section Opening  */
 
-.opening-section h1 {
-    text-transform: capitalize;
-    margin: 130px 0 20px 0;
-}
 
-
-.opening-section {
-    height: calc(100vh - 70px);
+.opening {
+    /* height: calc(100vh - 70px); */
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    justify-content: center;
 }
 
-.opening-section img {
+.opening-container {
+    margin-top: 130px;
+    text-align: center;
+}
+
+.opening-container h1 {
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.opening-container p {
+    margin-bottom: 38px;
+}
+
+.opening-container img {
     width: 100%;
     height: auto;
 }
 
-.opening-section button a {
-    color:var(--color-white);
-}
 
-.opening-section button {
+.big-btn {
+    color: var(--color-white);
+    font-weight: 700;
     display: inline-block;
-    padding: 22px 157px;
+    padding: 22px 157px 23px;
+    border: none;
     background: var(--color-primary);
     border-radius: var(--radius-big-btn);
-    margin-top: 38px;
     box-shadow: 5px 10px 14px #07ACE629;
 }
 
-.opening-section button::first-letter {
+.opening-container button::first-letter {
     text-transform: capitalize;
 }
 
@@ -147,13 +155,10 @@ a.logo {
 
  .statistics {
     margin-top: 100px;
-    /* display: flex;
-    justify-content: center; */
 }
 
 .statistics-small-header {
     text-align: center;
-    /* padding-top: 100px;  */
 }
 
 .statistics-info {
@@ -245,7 +250,7 @@ a.logo {
     background: var(--color-white);
     border: 1px solid #E8E9ED;
     border-radius: 5px;
-    margin: 37px;
+    margin-bottom: 37px;
 }
 
 .benefit-info {
@@ -255,7 +260,7 @@ a.logo {
 
 .benefit-info::after {
     content: "";
-    width: 332px;
+    width: 328px;
     height: 4px;
     display: block;
     margin-top: 50px;
@@ -365,7 +370,8 @@ a.logo {
 /* styles Section Pricing */
 
 
-.pricing .container {
+.pricing-container {
+    margin: 100px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -379,9 +385,6 @@ a.logo {
     margin-top: 50px;
 }
 
-.pricing-header {
-    margin-top: 100px;
-}
 
 .pricing-single {
     width: 372px;
@@ -395,7 +398,7 @@ a.logo {
 }
 
 .pricing-professional {
-    border: 1px solid var(--color-primary);
+    border: 1px solid #07ACE6;
 }
 
 .pricing-premium {
@@ -463,29 +466,30 @@ a.logo {
     background: url("../assets/Close.svg");
 }
 
-.pricing-single .btn {
+.pricing-single .small-btn {
     width: 150px;
     height: 50px;
     font-size: 13px;
     color: var(--color-white);
     font-family: var(--font-paragraphs);
     font-weight: 700;
-    border-radius: 23px;
+    border-radius: var(--radius-small-btn);
     padding: 16px 57px;
     position: relative;
     bottom: -10px;
 }
 
-.pricing-basic .btn {
+.pricing-basic .small-btn {
     background: var(--color-redish);
 }
 
-.pricing-professional .btn {
+.pricing-professional .small-btn {
     background: var(--color-primary);
     bottom: -40px;
+    padding: 16px 65px;
 }
 
-.pricing-premium .btn {
+.pricing-premium .small-btn {
     background: var(--color-green);
 }
 
@@ -496,11 +500,12 @@ a.logo {
 }
 
 
+
 /* styles Section Contact */
 
 
 .contact .container {
-    margin-top: 155px;
+    margin-top: 159px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -554,6 +559,7 @@ a.logo {
     color: var(--color-grey);
     font-family: var(--font-paragraphs);
 }
+
 input[type="email"],
 input[type="text"] {
     width: 439px;
@@ -596,12 +602,11 @@ input::placeholder {
   }
 
   button[type="submit"] {
-      width: 226px;
-      height: 57px;
       background: var(--color-primary);
       font-size: 13px;
       color: var(--color-white);
-      border-radius: 35px;
+      border-radius: var(--radius-medium-btn);
+      padding: 20px 97px;
       margin: 20px 0;
       align-self: flex-end;
   }

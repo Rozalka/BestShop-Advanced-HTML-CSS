@@ -41,14 +41,14 @@ h1 {
 
 h2 {
     font-family: var(--font-headers);
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 400;
     color: var(--color-black);
 }
 
 p {
     font-family: var(--font-paragraphs);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     color: var(--color-black);
 }
@@ -71,7 +71,7 @@ p {
 
 a.logo {
     font-family: var(--font-headers);
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 300;
     color: var(--color-primary);
 }
@@ -89,7 +89,7 @@ a.logo {
 }
 .nav-link {
     font-family: var(--font-paragraphs);
-    font-size: 11px;
+    font-size: 0.6875rem;
     font-weight: 700;
     letter-spacing: 3.28px;
     color: var(--color-grey);
@@ -179,14 +179,14 @@ a.logo {
 }
 
 .statistics-number {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 800;
     letter-spacing: 5.96px;
     margin-top: 14px;
 }
 
 .statistics-text {
-    font-size: 17px;
+    font-size: 1.0625rem;
     color: var(--color-grey);
     margin-top: 19px;
 }
@@ -353,7 +353,8 @@ a.logo {
     justify-content: center;
     background: var(--color-green);
     border: none;
-    margin: 37px 37px 37px 60px; 
+    margin-bottom: 37px; 
+    margin-left: 60px;
 }
 
 .benefit-pic3 img {
@@ -407,14 +408,14 @@ a.logo {
 
 .pricing-type {
     font-family: var(--font-headers);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
     margin: 34px auto 14px;
     color: #13253B;
 }
 .pricing-cost {
     font-family: var(--font-paragraphs);
-    font-size: 46px;
+    font-size: 2.875rem;
     font-weight: 300;
     margin-bottom: 5px;
 }
@@ -434,7 +435,7 @@ a.logo {
 
 .offer-time {
     font-family: var(--font-headers);
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 700;
     color: #13253B;
     margin-bottom: 50px;
@@ -469,7 +470,7 @@ a.logo {
 .pricing-single .small-btn {
     width: 150px;
     height: 50px;
-    font-size: 13px;
+    font-size: 0.8125rem;
     color: var(--color-white);
     font-family: var(--font-paragraphs);
     font-weight: 700;
@@ -505,11 +506,14 @@ a.logo {
 
 
 .contact .container {
-    margin-top: 159px;
+    margin-top: 155px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    max-width: 896px;
+    max-width: 900px;
+}
+.contact-info,
+.contact-form {
+    width: 50%;
 }
 
 .contact-info p {
@@ -519,21 +523,22 @@ a.logo {
 
 .contact-tools {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
 }
 .e-mail,
 .telephone {
     font-family: var(--font-paragraphs);
-    font-size: 16px;
     color: var(--color-grey);
     margin-right: 20px;
+    font-weight: 500;
 }
 
 .e-mail::before,
 .telephone::before {
     content: "";
-    width: 27px;
-    height: 27px;
+    width: 24px;
+    height: 24px;
     display: inline-block;
     margin-right: 10px;
     position: relative;
@@ -548,52 +553,73 @@ a.logo {
     background: url("../assets/Phone\ Icon.svg");
 }
 
-.contact-form {
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info  {
     display: flex;
     flex-direction: column;
 }
 
 .contact-form p {
-    max-width: 405px;
-    font-size: 12px;
+    font-size: 0.75rem;
     color: var(--color-grey);
     font-family: var(--font-paragraphs);
 }
 
-input[type="email"],
-input[type="text"] {
-    width: 439px;
-    height: 58px;
+.user-info input {
     border: none;
     border-bottom: 1px solid var(--color-grey);
-    margin-bottom: 30px;
+    line-height: 2.625rem;
 }
 
-input::placeholder {
+input[type="text"] {
+    margin-bottom: 40px;
+}
+.user-name,
+.user-email {
     text-transform: uppercase;
-    font-size: 11px;
+    font-size: 0.6875rem;
+    letter-spacing: 3.28px;
     font-family: var(--font-paragraphs);
     color: var(--color-primary);
+    font-weight: 700;
+}
+
+.user-agree {
+    margin-top: 30px;
+}  
+
+.checkbox {
+    position: relative;
+    display: block;
 }
 
 .checkbox input {
     opacity: 0;
     height: 0;
     width: 0;
+    position: absolute;
     }
 
-.checkbox {
+.user-agree p {
+    margin-left: 35px;
+}
+
+.user-agree {
     display: flex;
-  }
+    justify-content: space-between;
+  } 
    
   .checkbox span {
+    position: absolute;
     height: 24px;
     width: 24px;
     border: 1px solid #D1D1D1;
     border-radius: 4px;
     cursor: pointer;
-    margin-right: 10px;
-    box-sizing: border-box;
   }
   
   .checkbox input:checked + span {
@@ -603,11 +629,11 @@ input::placeholder {
 
   button[type="submit"] {
       background: var(--color-primary);
-      font-size: 13px;
+      font-size: 0.8125rem;
       color: var(--color-white);
       border-radius: var(--radius-medium-btn);
       padding: 20px 97px;
-      margin: 20px 0;
+      margin-top: 20px;
       align-self: flex-end;
   }
 

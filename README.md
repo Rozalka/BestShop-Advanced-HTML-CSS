@@ -1,2 +1,2 @@
 # BestShop-Advanced-HTML-CSS
-first HTML and CSS project
+First one page HTML and CSS project using Adobe XD program and materials shared by CodersLab.
